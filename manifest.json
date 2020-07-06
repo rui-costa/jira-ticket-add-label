@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "version": "0.20.625",
+    "name": "Set Done Label",
+    "author":"Rui Costa",
+    "content_scripts": [
+        {
+          "matches": ["https://*.atlassian.net/*"],
+          "run_at": "document_end",
+          "js": ["extension.js"]
+        }
+      ],
+      "icons": { "16": "icon16.png",
+        "48": "icon48.png",
+       "128": "icon128.png" }
+  }
